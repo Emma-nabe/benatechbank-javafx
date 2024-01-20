@@ -1,4 +1,7 @@
 package com.btech.benatechbank.Views;
 
-public class ClientMenuOptions {
+public enum ClientMenuOptions {
+    DASHBOARD,
+    TRANSACTIONS,
+    ACCOUNTS
 }
