@@ -37,7 +37,7 @@ public class ClientMenuController implements Initializable {
         Model.getInstance().getViewFactory().getClientSelectedMenuItem().set(ClientMenuOptions.TRANSACTIONS);
     }
 
-    private void  onAccounts()
+    private void onAccounts()
     {
         Model.getInstance().getViewFactory().getClientSelectedMenuItem().set(ClientMenuOptions.ACCOUNTS);
     }
