@@ -19,20 +19,19 @@
             </font>
         </Text>
     </VBox>
-    <VBox layoutX="356.0" layoutY="88.0" prefHeight="350.0" prefWidth="350.0" styleClass="login_form_container" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
-        <children>
-          <Label id="choice-prompt-text" text="Choisir votre type de compte:" />
-          <ChoiceBox fx:id="acc_selector" prefWidth="150.0" styleClass="account_selector" />
-          <Label fx:id="payee_address_lbl" text="Identifiant Client:" />
-          <TextField fx:id="payee_address_fld" styleClass="input_field" />
-          <Label text="Mot de passe:" />
-          <TextField fx:id="password_fld" styleClass="input_field" />
-          <Button fx:id="login_btn" mnemonicParsing="false" style="-fx-font-weight: bold;" text="Connexion">
-              <font>
-                  <Font name="System Bold" size="12.0" />
-              </font>
-          </Button>
-          <Label fx:id="error_lbl" styleClass="error_lbl" />
-        </children>
+    <VBox layoutX="356.0" layoutY="88.0" prefHeight="350.0" prefWidth="350.0" styleClass="login_form_container"
+          AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+        <Label id="choice-prompt-text" text="Choisir votre type de compte:"/>
+        <ChoiceBox fx:id="acc_selector" prefWidth="90.0" styleClass="account_selector"/>
+        <Label fx:id="payee_address_lbl" text="Identifiant Client:"/>
+        <TextField fx:id="payee_address_fld" styleClass="input_field"/>
+        <Label text="Mot de passe:"/>
+        <TextField fx:id="password_fld" styleClass="input_field"/>
+        <Button fx:id="login_btn" mnemonicParsing="false" style="-fx-font-weight: bold;" text="Connexion">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Button>
+        <Label fx:id="error_lbl" styleClass="error_lbl"/>
     </VBox>
 </AnchorPane>
