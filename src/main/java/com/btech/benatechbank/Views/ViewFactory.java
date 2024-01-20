@@ -30,11 +30,13 @@ public class ViewFactory {
         this.adminSelectedMenuItem = new SimpleObjectProperty<>();
     }
 
-    public AccountType getLoginAccountType() {
+    public AccountType getLoginAccountType()
+    {
         return loginAccountType;
     }
 
-    public void setLoginAccountType(AccountType loginAccountType) {
+    public void setLoginAccountType(AccountType loginAccountType)
+    {
         this.loginAccountType = loginAccountType;
     }
 
