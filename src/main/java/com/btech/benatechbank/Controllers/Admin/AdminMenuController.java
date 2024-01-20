@@ -1,6 +1,7 @@
 package com.btech.benatechbank.Controllers.Admin;
 
 import com.btech.benatechbank.Models.Model;
+import com.btech.benatechbank.Views.AdminMenuOptions;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
@@ -25,6 +26,6 @@ public class AdminMenuController implements Initializable
 
     private void onCreateClient()
     {
-        Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set("Create Client");
+        Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminMenuOptions.CREATE_CLIENT);
     }
 }
