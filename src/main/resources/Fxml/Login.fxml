@@ -26,15 +26,15 @@
         <Label id="choice-prompt-text" text="Choisir votre type de compte:" />
         <ChoiceBox fx:id="acc_selector" prefWidth="90.0" styleClass="account_selector" />
         <Label fx:id="payee_address_lbl" text="Identifiant Client:" />
-        <TextField fx:id="payee_address_fld" styleClass="input_field" />
+        <TextField fx:id="payee_address_fld" promptText="\@Identifiant" styleClass="input_field" />
         <Label text="Mot de passe:" />
-        <PasswordField fx:id="password_fld" styleClass="input_field" />
+        <PasswordField fx:id="password_fld" promptText="Mot de passe" styleClass="input_field" />
         <Button fx:id="login_btn" mnemonicParsing="false" style="-fx-font-weight: bold;" text="Connexion" translateY="15.0">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>
         </Button>
         <Label fx:id="error_lbl" styleClass="error_lbl" />
-      <Hyperlink text="Mot de passe oublie ?" translateX="115.0" translateY="-20.0" />
+      <Hyperlink text="Mot de passe oublie ?" textFill="#074607" translateX="115.0" translateY="-20.0" />
     </VBox>
 </AnchorPane>
