@@ -3,7 +3,9 @@
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
@@ -18,20 +20,21 @@
                 <Font name="Arial Black" size="14.0" />
             </font>
         </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 8; -fx-font-weight: bold;" text="Droits d'auteur (c). Tous droits reserves." translateY="120.0" />
     </VBox>
-    <VBox layoutX="356.0" layoutY="88.0" prefHeight="350.0" prefWidth="350.0" styleClass="login_form_container"
-          AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
-        <Label id="choice-prompt-text" text="Choisir votre type de compte:"/>
-        <ChoiceBox fx:id="acc_selector" prefWidth="90.0" styleClass="account_selector"/>
-        <Label fx:id="payee_address_lbl" text="Identifiant Client:"/>
-        <TextField fx:id="payee_address_fld" styleClass="input_field"/>
-        <Label text="Mot de passe:"/>
-        <TextField fx:id="password_fld" styleClass="input_field"/>
-        <Button fx:id="login_btn" mnemonicParsing="false" style="-fx-font-weight: bold;" text="Connexion">
+    <VBox layoutX="356.0" layoutY="88.0" prefHeight="350.0" prefWidth="350.0" styleClass="login_form_container" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+        <Label id="choice-prompt-text" text="Choisir votre type de compte:" />
+        <ChoiceBox fx:id="acc_selector" prefWidth="90.0" styleClass="account_selector" />
+        <Label fx:id="payee_address_lbl" text="Identifiant Client:" />
+        <TextField fx:id="payee_address_fld" styleClass="input_field" />
+        <Label text="Mot de passe:" />
+        <PasswordField fx:id="password_fld" styleClass="input_field" />
+        <Button fx:id="login_btn" mnemonicParsing="false" style="-fx-font-weight: bold;" text="Connexion" translateY="15.0">
             <font>
-                <Font name="System Bold" size="12.0"/>
+                <Font name="System Bold" size="12.0" />
             </font>
         </Button>
-        <Label fx:id="error_lbl" styleClass="error_lbl"/>
+        <Label fx:id="error_lbl" styleClass="error_lbl" />
+      <Hyperlink text="Mot de passe oublie ?" translateX="115.0" translateY="-20.0" />
     </VBox>
 </AnchorPane>
