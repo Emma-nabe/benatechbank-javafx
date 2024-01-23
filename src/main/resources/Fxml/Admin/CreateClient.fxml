@@ -8,6 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
+<?import javafx.scene.control.PasswordField?>
 <AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="create_client_container" stylesheets="@../../Styles/CreateClient.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.btech.benatechbank.Controllers.Admin.CreateClientController">
    <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creer nouveau compte client" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
    <VBox fillWidth="false" layoutX="14.0" layoutY="33.0" prefHeight="700.0" prefWidth="600.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="40.0">
@@ -16,7 +17,7 @@
       <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom:" />
       <TextField fx:id="lName_fld" layoutX="10.0" layoutY="28.0" />
       <Text layoutX="10.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe:" />
-      <TextField fx:id="password_fld" layoutX="10.0" layoutY="69.0" />
+      <PasswordField fx:id="password_fld" layoutX="10.0" layoutY="69.0" />
       <Text layoutX="10.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse du client:" />
       <CheckBox fx:id="pAddress_box" mnemonicParsing="false" />
       <Label fx:id="pAddress_lbl" styleClass="payee_address_lbl" />
