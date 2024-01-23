@@ -20,7 +20,8 @@ public class Model {
         return model;
     }
 
-    public ViewFactory getViewFactory() {
+    public ViewFactory getViewFactory()
+    {
         return viewFactory;
     }
 }
